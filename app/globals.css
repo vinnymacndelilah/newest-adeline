@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-emilys-candy), "Emilys Candy", cursive;
+  --font-hand: var(--font-kalam), "Kalam", cursive;
+  --font-sans: var(--font-nunito), "Nunito", system-ui, sans-serif;
+  --font-mono: var(--font-ibm-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --forest: #294c35;
+    --leaf: #7c9a61;
+    --cream: #fbf5ea;
+    --paper: #fffdf9;
+    --ink: #303734;
+    --muted: #68726c;
+    --gold: #d89a3c;
+    --coral: #d78472;
+    --sage-tint: #f7f8f4;
+    --sage-border: #dce7d5;
+    --card-border: #e9ece5;
+  }
+
+  html {
+    background-color: var(--cream);
+    color: var(--ink);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.adeline-dots {
+  background-color: #fffaf2;
+  background-image: radial-gradient(#e8dfd0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.adeline-chat-frame {
+  border: 2px solid #294c35;
+  background: #fffaf2;
+  box-shadow: 10px 12px #dce7d5;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

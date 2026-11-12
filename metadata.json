@@ -1,0 +1,8 @@
+{
+  "name": "Dear Adeline",
+  "description": "Personal enough to follow their wonder. Structured enough to help them graduate. A family homeschool learning companion, interactive classroom, registrar, portfolio, and living library.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
